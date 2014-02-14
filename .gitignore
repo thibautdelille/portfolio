@@ -1,4 +1,4 @@
-node_module/
+node_modules/
 html/wp-config-production.php
 .htaccess
 wp-content/uploads/

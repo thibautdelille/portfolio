@@ -23,9 +23,9 @@ module.exports = function(grunt) {
         },
         files: [
           {
-            cwd: 'html/wp-content/themes/murdered/assets/css/',
+            cwd: 'html/wp-content/themes/thibautdelille/assets/css/',
             src : ['*.sass.css'],
-            dest: 'html/wp-content/themes/murdered/assets/css/',
+            dest: 'html/wp-content/themes/thibautdelille/assets/css/',
             ext : '.autoprefixed.css',
             expand : true
           }
@@ -42,9 +42,9 @@ module.exports = function(grunt) {
     cssmin: {
       minify: {
         expand: true,
-        cwd: 'html/wp-content/themes/murdered/assets/css/',
+        cwd: 'html/wp-content/themes/thibautdelille/assets/css/',
         src: ['*.css', '!*.min.css'],
-        dest: 'html/wp-content/themes/murdered/assets/css/',
+        dest: 'html/wp-content/themes/thibautdelille/assets/css/',
         ext: '.min.css'
       }
     },
@@ -60,20 +60,12 @@ module.exports = function(grunt) {
         banner: '/*!\n<%= pkg.name %>\nv<%= pkg.version %>\n<%= grunt.template.today("mm-dd-yyyy") %>\nMade at <%= pkg.author.name %> - <%= pkg.author.url %>\n*/'
       },
       js: {
-        src: ['html/wp-content/themes/murdered/assets/vendors/modernizr/modernizr-2.6.2.min.js', 'html/wp-content/themes/murdered/assets/js/globals.js', 'html/wp-content/themes/murdered/assets/js/murdered-*.js', '!html/wp-content/themes/murdered/assets/js/murdered-agegate.js' ],
-        dest: 'html/wp-content/themes/murdered/assets/js/murdered.js'
-      },
-      agegatejs: {
-        src: ['html/wp-content/themes/murdered/assets/vendors/modernizr/modernizr-2.6.2.min.js', 'html/wp-content/themes/murdered/assets/js/globals.js', 'html/wp-content/themes/murdered/assets/js/murdered-agegate.js'],
-        dest: 'html/wp-content/themes/murdered/assets/js/agegate.js'
+        src: ['html/wp-content/themes/thibautdelille/assets/vendors/modernizr/modernizr-2.6.2.min.js', 'html/wp-content/themes/thibautdelille/assets/js/globals.js', 'html/wp-content/themes/thibautdelille/assets/js/thibautdelille-*.js'],
+        dest: 'html/wp-content/themes/thibautdelille/assets/js/thibautdelille.js'
       },
       css: {
-        src: ['html/wp-content/themes/murdered/assets/vendors/icomoon/style.css', 'html/wp-content/themes/murdered/assets/css/style.autoprefixed.css'],
-        dest: 'html/wp-content/themes/murdered/assets/css/style.css'
-      },
-      agegate: {
-        src: ['html/wp-content/themes/murdered/assets/vendors/icomoon/style.css', 'html/wp-content/themes/murdered/assets/css/agegate.autoprefixed.css'],
-        dest: 'html/wp-content/themes/murdered/assets/css/agegate.css'
+        src: ['html/wp-content/themes/thibautdelille/assets/vendors/icomoon/style.css', 'html/wp-content/themes/thibautdelille/assets/css/style.autoprefixed.css'],
+        dest: 'html/wp-content/themes/thibautdelille/assets/css/style.css'
       }
     },
 
@@ -85,9 +77,9 @@ module.exports = function(grunt) {
       // Copy all ./assets/ folder to Jekyll folder
       icomoon: {
         files: [
-          { expand: true, cwd: 'html/wp-content/themes/murdered/assets/vendors/icomoon/fonts', src: ['./**/*.*'], dest: 'html/wp-content/themes/murdered/assets/css/fonts' }
+          { expand: true, cwd: 'html/wp-content/themes/thibautdelille/assets/vendors/icomoon/fonts', src: ['./**/*.*'], dest: 'html/wp-content/themes/thibautdelille/assets/css/fonts' }
         ]
-      },
+      }
     },
 
     /*
@@ -100,12 +92,7 @@ module.exports = function(grunt) {
       },
       js: {
         files: {
-          'html/wp-content/themes/murdered/assets/js/murdered.min.js': ['html/wp-content/themes/murdered/assets/js/murdered.js']
-        }
-      },
-      agegate: {
-        files: {
-          'html/wp-content/themes/murdered/assets/js/agegate.min.js': ['html/wp-content/themes/murdered/assets/js/agegate.js']
+          'html/wp-content/themes/thibautdelille/assets/js/thibautdelille.min.js': ['html/wp-content/themes/thibautdelille/assets/js/thibautdelille.js']
         }
       }
     },
@@ -119,8 +106,8 @@ module.exports = function(grunt) {
         files : [
           {
             src : ['*.scss', '!_*.scss'],
-            cwd : 'html/wp-content/themes/murdered/assets/scss',
-            dest : 'html/wp-content/themes/murdered/assets/css/',
+            cwd : 'html/wp-content/themes/thibautdelille/assets/scss',
+            dest : 'html/wp-content/themes/thibautdelille/assets/css/',
             ext : '.sass.css',
             expand : true
           }
@@ -136,11 +123,11 @@ module.exports = function(grunt) {
     */
     watch: {
       scss: {
-        files: ['html/wp-content/themes/murdered/assets/scss/**/*.scss'],
+        files: ['html/wp-content/themes/thibautdelille/assets/scss/**/*.scss'],
         tasks: ['scss']
       },
       js: {
-        files: ['html/wp-content/themes/murdered/assets/js/murdered-*.js'],
+        files: ['html/wp-content/themes/thibautdelille/assets/js/thibautdelille-*.js'],
         tasks: ['js']
       },
       livereload: {
@@ -148,19 +135,19 @@ module.exports = function(grunt) {
           livereload: true
         },
         files: [
-          'html/wp-content/themes/murdered/*.php',
-          'html/wp-content/themes/murdered/*.html',
-          'html/wp-content/themes/murdered/assets/css/{,*/}*.css',
-          'html/wp-content/themes/murdered/assets/js/murdered.js'
+          'html/wp-content/themes/thibautdelille/*.php',
+          'html/wp-content/themes/thibautdelille/*.html',
+          'html/wp-content/themes/thibautdelille/assets/css/{,*/}*.css',
+          'html/wp-content/themes/thibautdelille/assets/js/thibautdelille.js'
         ]
       }
     }
   });
 
   // CSS
-  grunt.registerTask('scss', ['sass', 'autoprefixer', 'concat:css', 'concat:agegate', 'cssmin']);
+  grunt.registerTask('scss', ['sass', 'autoprefixer', 'concat:css', 'cssmin']);
 
-  grunt.registerTask('js', ['concat:js', 'concat:agegatejs', 'uglify:js', 'uglify:agegate']);
+  grunt.registerTask('js', ['concat:js', 'uglify:js']);
 
   grunt.registerTask('dev', ['watch']);
 
