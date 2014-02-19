@@ -5,6 +5,8 @@
 	get_header(); 
 	?>
 <section id="content" role="main">
+		<div class="row">
+			<div class="marged padded">
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <section class="entry-content">
@@ -16,6 +18,8 @@
 </section>
 </article>
 <?php endwhile; endif; ?>
+		</div>
+	</div>
 </section>
 <?php
 	wp_reset_query();
@@ -28,7 +32,6 @@
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<?php get_template_part( 'slide' ); ?>
 		<?php endwhile; endif; ?>
-		<?php get_template_part( 'nav', 'below' ); ?>
 	</div>
 </div>
 

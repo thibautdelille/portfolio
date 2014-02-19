@@ -9,9 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
 	<?php wp_head(); ?>
 	<script src="<?php echo get_template_directory_uri();?>/assets/js/jquery-1.10.1.min.js"></script>
-  <script src="<?php echo get_template_directory_uri();?>/assets/js/aau-utils.js"></script>
-  <script src="<?php echo get_template_directory_uri();?>/assets/js/aau-slide.js"></script>
-  <script src="<?php echo get_template_directory_uri();?>/assets/js/aau-carousel.js"></script>
+  <script src="<?php echo get_template_directory_uri();?>/assets/js/aau.min.js"></script>
 </head>
 <body <?php body_class(); ?>>
 	<div id="wrapper" class="hfeed">
@@ -25,10 +23,11 @@
 			</div>
 		</div>
 		<nav id="menu" role="navigation">
-			<div id="search">
-				<?php get_search_form(); ?>
+			<div class="row middle-nav">
+				<div class="marged padded">
+					<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+				</div>
 			</div>
-			<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
 		</nav>
 	</header>
 	<div id="container">

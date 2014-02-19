@@ -5,6 +5,14 @@ Author URI: http://www.thibautdelille.org/
 Version: 1.0
 */
 
+#site-title {
+	display:inline-block;
+	margin-right:24px;
+}
+#site-description {
+	display:inline-block;
+	color:#f2f2f2;
+}
 #site-title h1{
 	margin-bottom:0;
 }
@@ -13,4 +21,35 @@ Version: 1.0
 	text-decoration: none;
 	color:#f2f2f2;
 	margin-bottom:0;
+}
+
+nav .menu ul{
+	margin:0;
+	padding:0;
+}
+nav .menu li{
+	float:left;
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+nav .menu li a{
+	display:block;
+	padding: 8px 24px 8px 0;
+}
+h3{
+	margin:32px 0;
+}
+@media only screen and (min-width: 972px){
+	.carousel{
+	  height:500px;
+	  min-height:500px;
+	  max-height:500px;
+	}
+	.carousel .slides .slide>img {
+		height: 500px;
+	}
+	.carousel .carousel-arrow-container {
+		top: 218px;
+	}
 }

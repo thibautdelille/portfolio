@@ -314,6 +314,7 @@
           }
         }else{
           clone = this.$element.find('.slide:last-child');
+          console.log(clone.attr('class'));
           this.$slides.prepend(clone);
           clone.on('click', $.proxy(self.goTo, self, clone));
           clone.on('load', $.proxy(self.slideLoaded, self));

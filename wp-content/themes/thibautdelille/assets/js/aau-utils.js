@@ -61,7 +61,6 @@ var isSafariMobile = function() {
 !function ($) {
   // On load on tag attribute
   $(window).on('load', function () {
-    console.log('isSafari:', isSafari, navigator.userAgent, navigator.vendor);
     if(isSafari){
       $('html').addClass('safari');
     }

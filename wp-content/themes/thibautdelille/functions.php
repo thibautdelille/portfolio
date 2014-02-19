@@ -112,6 +112,11 @@ function thibautdelille_comments_number( $count )
 	}
 }
 
+add_filter( 'wp_nav_menu_args', 'my_wp_nav_menu_args' );
+function my_wp_nav_menu_args( $args = '' ) {
+	$args['container'] = false;
+	return $args;
+}
 /**********************************************************************
 *                              FUNCTIONS                              *
 ***********************************************************************/
