@@ -11,7 +11,7 @@ Version: 1.0
 }
 #site-description {
 	display:inline-block;
-	color:#f2f2f2;
+	color:#dcdcdc;
 }
 #site-title h1{
 	margin-bottom:0;
@@ -19,7 +19,7 @@ Version: 1.0
 #site-title h1 a{
 	font-family: 'Buster LT W01';
 	text-decoration: none;
-	color:#f2f2f2;
+	color:#dcdcdc;
 	margin-bottom:0;
 }
 

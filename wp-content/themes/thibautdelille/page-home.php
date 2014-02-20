@@ -67,8 +67,10 @@
           <h3>Get in Touch</h3>
           <div>
             <p><strong>Thibaut Delille</strong></p>
-            <p>tdelille@gmail.com<br/>
-            (415)706-4532<br/>
+            <p><a href="mailto:tdelille@gmail.com">tdelille@gmail.com</a><br/>
+            <a href="https://github.com/thibautdelille" target="_blank">github</a><br/>
+            <a href="https://www.linkedin.com/pub/thibaut-delille/12/a07/87b/en" target="_blank">linkedin</a><br/>
+            <a href="<?php echo get_template_directory_uri();?>/assets/thibaut_delille_resume.pdf" target="_blank">resume</a><br/>
             </p>
           </div>
         </div>
