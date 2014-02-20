@@ -14,18 +14,20 @@
 <body <?php body_class(); ?>>
 	<div id="wrapper" class="hfeed">
 	<header id="header" role="banner">
-		<div class="row">
-			<div class="marged padded">
-				<section id="branding">
-					<div id="site-title"><h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_attr_e( get_bloginfo( 'name' ), 'thibautdelille' ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a></h1></div>
-					<div id="site-description"><?php bloginfo( 'description' ); ?></div>
-				</section>
-			</div>
-		</div>
-		<nav id="menu" role="navigation">
-			<div class="row middle-nav">
-				<div class="marged padded">
-					<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+		<nav>
+			<div class="primary-nav" id="primary">
+				<div class="row top-nav">
+					<div class="marged padded">
+						<section id="branding">
+							<div id="site-title"><h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_attr_e( get_bloginfo( 'name' ), 'thibautdelille' ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a></h1></div>
+							<div id="site-description"><?php bloginfo( 'description' ); ?></div>
+						</section>
+					</div>
+				</div>
+				<div class="row middle-nav">
+					<div class="marged_tablet padded_tablet">
+						<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'menu_class' => 'nav' ) ); ?>
+					</div>
 				</div>
 			</div>
 		</nav>

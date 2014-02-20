@@ -3,7 +3,7 @@
   <div class="info">
     <div class="row">
       <div class="marged padded">
-        <p class="lead"><?php the_title();?></p> 
+        <p class="lead"><a href="<?php the_permalink(); ?>"><?php the_title();?></a></p> 
       </div>
     </div>
   </div>
