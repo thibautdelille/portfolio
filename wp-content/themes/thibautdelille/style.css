@@ -60,13 +60,19 @@ h3{
 .btn{
 	border-radius: 0;
 }
-
+.listoflinks .openlinks .icon-plus, 
+.listoflinks .openlinks .icon-minus{
+	width: 16px;
+}
 @media only screen and (min-width: 732px){
 	iframe{
 		height:470px;
 	}
 	.row.block-thumb [data-aau=imageloader] {
 		height: 144px;
+	}
+	.listoflinks .links{
+		text-align: center;
 	}
 }
 @media only screen and (min-width: 972px){
