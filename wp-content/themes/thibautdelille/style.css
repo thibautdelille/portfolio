@@ -56,9 +56,30 @@ h3{
 .row.block-thumb [data-aau=imageloader] {
 	height: 70px;
 }
+.project h3,
+.project h4{
+	margin-bottom:0;
+}
+.project [data-aau="imageloader"]{
+	margin-bottom:8px;
+}
+
+.tag{
+	border-radius: 4px;
+	background-color:#FFFFFF !important;
+	padding: 0px 6px;
+	margin: 4px 12px 4px 0;
+	display: inline-block;
+}
 
 .btn{
-	border-radius: 0;
+	border-radius: 4px;
+}
+.btn-primary{
+	background-color:#3D9970 !important;
+}
+.btn-standard{
+	background-color:#0074D9 !important;
 }
 .listoflinks .openlinks .icon-plus, 
 .listoflinks .openlinks .icon-minus{
@@ -67,6 +88,9 @@ h3{
 @media only screen and (min-width: 732px){
 	iframe{
 		height:470px;
+	}
+	.tablet-9 iframe{
+		height:350px;
 	}
 	.row.block-thumb [data-aau=imageloader] {
 		height: 144px;
@@ -78,6 +102,9 @@ h3{
 @media only screen and (min-width: 972px){
 	iframe{
 		height:600px;
+	}
+	.tablet-9 iframe{
+		height:470px;
 	}
 	.carousel{
 	  height:500px;

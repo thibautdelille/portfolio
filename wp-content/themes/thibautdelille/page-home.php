@@ -43,7 +43,8 @@
 		'post_type' => 'post', 
 		'posts_per_page' => -1
 	);
-	query_posts($args);?>
+	query_posts($args); ?>
+<section class="dark">
 <div class="row block-thumb">
   <div class="marged padded text-centered">
     <h2>Projects</h2>
@@ -52,6 +53,11 @@
 	<?php get_template_part( 'thumb' ); ?>
 	<?php endwhile; endif; ?>
 </div>
+</section>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+	<?php get_template_part( 'section' ); ?>
+<?php endwhile; endif; ?>
+<div class="four_spacing"></div>
 
 <section class="white">
 	<div class="row block-thumb">
