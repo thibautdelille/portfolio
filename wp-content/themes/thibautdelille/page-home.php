@@ -44,7 +44,7 @@
 		'posts_per_page' => -1
 	);
 	query_posts($args); ?>
-<section class="dark">
+<section>
 <div class="row block-thumb">
   <div class="marged padded text-centered">
     <h2>Projects</h2>
