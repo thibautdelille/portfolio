@@ -11,6 +11,7 @@ sitemap.xml
 *.log
 wp-content/cache/
 wp-content/backups/
+wp-content/plugins/json-cache/
 sitemap.xml.gz
 wp-config.php
 wp-config-stage.php
