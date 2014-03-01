@@ -1,6 +1,7 @@
 node_modules/
 html/wp-config-production.php
 .htaccess
+wp-content/plugins/JSONCache/
 wp-content/uploads/
 wp-content/blogs.dir/
 wp-content/upgrade/
